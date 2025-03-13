@@ -1,17 +1,22 @@
+attempts = 0
 print("what is your name?")
 if input():
     print("Welcome")
-from random import randrange
-randrange(10)
+import random
+str = random.randint(1, 10)
 print("I am guessing a number from 1-10. Can you guess the number?")
-while True:
-    guess = int(input("Enter your guess:"))
-    if guess < randrange(10):
-        print("Your guess is too low")
-    elif guess > randrange(10):
-        print("Your guess is too high")
-        
-    else:
-        print("You guessed it!")
-        break
-        
+print("You can only get 10 tries")
+while attempts < 5:
+    guess = int(input("Please guess a number"));
+    attempts_used= attempts + 1;
+    if guess > str:
+            print("Guess is too high, try a smaller number");
+    elif guess < str:
+            print("Guess is too low, try a higher number");
+    elif guess == str:
+            attempts_used=str(attempts_used)
+            print("Correct- you win in", attempts_used, "guesses");
+            exit();
+else:
+    if attempts == 5:
+       print("You failed to guess in time") 
