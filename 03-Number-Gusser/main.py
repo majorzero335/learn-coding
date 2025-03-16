@@ -1,14 +1,14 @@
 maxtries = 5
 attempts = 0
-print("what is your name?")
-if input():
-    print("Welcome")
+print("What is your name?")
+print("Hello, " + input() + "!")
+print("Welcome to the number guessing game!")
 import random
 str = random.randint(1, 10)
 print("I am guessing a number from 1-10. Can you guess the number?")
 print(f"You can only get {maxtries} tries")
 while attempts < maxtries:
-    guess = int(input("Please guess a number"));
+    guess = int(input("Please guess a number:"));
     attempts= attempts + 1;
     if guess > str:
             print("Guess is too high, try a smaller number");
