@@ -11,13 +11,13 @@ while (attempts < maxtries) {
     guess = parseInt(guess);
     attempts += 1;
     if (guess > number) {
-        alert("Guess is too high, try a smaller number");
+        alert("The guess is too high, try a smaller number");
     } else if (guess < number) {
-        alert("Guess is too low, try a higher number");
+        alert("The guess is too low, try a higher number");
     } else if (guess == number) {
-        alert("Correct- you win in " + attempts + " guesses");
+        alert("Congratulations- you win in " + attempts + " guesses");
         break;
     } else {
-        alert("You failed to guess in time. The correct number was " + number + ". Better luck next time!");
+        alert("Sorry, you failed to guess in time. The correct number was " + number + ". Better luck next time!");
     }
 }
