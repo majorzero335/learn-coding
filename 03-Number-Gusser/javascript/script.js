@@ -1,7 +1,7 @@
 var attempts = 0;
 const maxtries = 5;
-var n = prompt("What is your name?");
-alert("Hello, " + n + "!");
+var name1 = prompt("What is your name?");
+alert("Hello, " + name1 + "!");
 alert("Welcome to the number guessing game!");
 var number = Math.floor(Math.random() * 10) + 1;
 alert("I am guessing a number from 1-10. Can you guess the number?");
